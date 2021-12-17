@@ -1,0 +1,48 @@
+title: mschart
+
+template:
+  package: pkgardata
+  bootswatch: simplex
+
+home:
+  links:
+  - text: 'Visit <a href="https://www.ardata.fr"><img alt="ardata" src="https://www.ardata.fr/img/ardata-logo.svg" width="70"></a> website'
+    href: https://www.ardata.fr
+
+reference:
+  - title: High level functions
+    contents:
+    - starts_with("ms_")
+  - title: Global settings
+    contents:
+    - chart_settings
+    - as_bar_stack
+  - title: Axis
+    contents:
+    - starts_with("chart_ax_")
+  - title: Chart titles
+    contents:
+    - chart_labels
+  - title: Series visual settings
+    contents:
+    - starts_with("chart_data_")
+    - chart_labels_text
+  - title: Global visual settings
+    contents:
+    - ends_with("_theme")
+  - title: Send to Microsoft Documents
+    contents:
+    - ph_with.ms_chart
+    - starts_with("body_add")
+
+navbar:
+  title: mschart
+  type: default
+  left:
+  - text: Function reference
+    href: reference/index.html
+  - text: User Documentation
+    href: https://ardata-fr.github.io/officeverse/
+  right:
+  - icon: fa-github fa-lg
+    href: https://github.com/ardata-fr/mschart
