@@ -51,7 +51,7 @@ to_pml.ms_barchart <- function(x, id_x, id_y, sheetname = "sheet1", add_ns = FAL
   dir_ <- structure(c("bar", "col"), .Names = c("horizontal", "vertical"))
   dir_ <- dir_[x$options$dir]
 
-  paste0( "<c:pieChart>",
+  paste0( "<c:barChart>",
                   sprintf("<c:barDir val=\"%s\"/>", dir_),
                   sprintf("<c:grouping val=\"%s\"/>", x$options$grouping),
                   sprintf("<c:varyColors val=\"%.0f\"/>", x$options$vary_colors),
@@ -60,7 +60,7 @@ to_pml.ms_barchart <- function(x, id_x, id_y, sheetname = "sheet1", add_ns = FAL
                   sprintf("<c:gapWidth val=\"%.0f\"/>", x$options$gap_width),
                   sprintf("<c:overlap val=\"%.0f\"/>", x$options$overlap),
                   x_ax_id, y_ax_id,
-                  "</c:pieChart>" )
+                  "</c:barChart>" )
 }
 
 standard_pos <- c("b", "ctr", "l", "r", "t")
